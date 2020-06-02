@@ -18,7 +18,7 @@ class AstroAT0131 < Formula
   depends_on "go"
 
   def install
-    bin.install "astro@0.13.1"
+    bin.install "astro"
   end
 
   test do
