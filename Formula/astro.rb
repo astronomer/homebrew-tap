@@ -15,8 +15,6 @@ class Astro < Formula
     end
   end
   
-  depends_on "go"
-
   def install
     bin.install "astro"
   end
