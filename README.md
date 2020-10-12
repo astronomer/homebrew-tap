@@ -10,7 +10,7 @@ To install Astro CLI run:
 brew install astronomer/tap/astro
 ```
 
-To install a specific version Astro CLI use @major.minor.patch for example, to install v0.13.0 run:
+To install a specific version Astro CLI use @major.minor.patch for example, to install v0.21.0 run:
 
 ```sh
 brew install astronomer/tap/astro@0.21.0
