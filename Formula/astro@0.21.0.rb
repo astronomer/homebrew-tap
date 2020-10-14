@@ -7,11 +7,11 @@ class AstroAT0210 < Formula
 
   if OS.mac?
     url "https://github.com/astronomer/astro-cli/releases/download/v0.21.0/astro_0.21.0_darwin_amd64.tar.gz"
-    sha256 "686cbb48208a6980f3bfd2332a64551f30e4fd6fe94a244e7f9cdef1778c4e35"
+    sha256 "996e7daabffc1ce09d951f4c325102e401094f5b930ab6173f9662fff6a26d44"
   elsif OS.linux?
     if Hardware::CPU.intel?
       url "https://github.com/astronomer/astro-cli/releases/download/v0.21.0/astro_0.21.0_linux_amd64.tar.gz"
-      sha256 "415e6e706d777622968919e45819eaf0e36c644721d83839268b1c04440ed899"
+      sha256 "b90a03758d16cfca6a95f45cde34de2edd1417cf56cf2b0d5b50928ab2399a74"
     end
   end
 
