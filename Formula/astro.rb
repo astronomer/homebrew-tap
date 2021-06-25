@@ -11,14 +11,14 @@ class Astro < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/astronomer/astro-cli/releases/download/v0.25.1/astro_0.25.1_darwin_amd64.tar.gz"
-      sha256 "1cef8ddd67950f7207a2e5f5ae44a66dea4d3def51c0e4bc8ccf1d9e791d2f36"
+      sha256 "17c5c1d468076b87b0b986afb88145c158f20fa3606714d87378c7e3ccbd2338"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/astronomer/astro-cli/releases/download/v0.25.1/astro_0.25.1_linux_amd64.tar.gz"
-      sha256 "5da25e189902f25c13bfcc7ec7ccf9b6fba09743458288a9422c64913e6cd71b"
+      sha256 "62c4ccd7bf0f43667b70e854f8b26838e56108c00ea2c86d061d19a3430f3f92"
     end
   end
 
