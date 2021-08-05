@@ -16,7 +16,7 @@ class Astro < Formula
   end
 
   on_linux do
-    if Hardware::CPU.inte4?
+    if Hardware::CPU.intel?
       url "https://github.com/astronomer/astro-cli/releases/download/v0.25.4/astro_0.25.4_linux_amd64.tar.gz"
       sha256 "bffb5d76ca2082c8cd573c217f5f4208329f3704cc89e463494063e672cc1dec"
     end
