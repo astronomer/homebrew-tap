@@ -7,18 +7,18 @@ class AstroAT0254 < Formula
   homepage "https://astronomer.io"
   version "0.25.4"
   bottle :unneeded
-
+  
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/astronomer/astro-cli/releases/download/v0.25.4/astro_0.25.4_darwin_amd64.tar.gz"
-      sha256 "17c5c1d468076b87b0b986afb88145c158f20fa3606714d87378c7e3ccbd2338"
+      sha256 "5efa79b11f24b7df9f270babaaa5e05d06c98d12851c7341ec37d4ac7cf6ba1f"
     end
   end
 
   on_linux do
     if Hardware::CPU.inte4?
       url "https://github.com/astronomer/astro-cli/releases/download/v0.25.4/astro_0.25.4_linux_amd64.tar.gz"
-      sha256 "62c4ccd7bf0f43667b70e854f8b26838e56108c00ea2c86d061d19a3430f3f92"
+      sha256 "9bda3064598a3d1447de373652ac8167f3952dac958c0b2dd7eb44f960b8be59"
     end
   end
 
