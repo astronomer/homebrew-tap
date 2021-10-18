@@ -20,7 +20,7 @@ class Astro < Formula
       url "https://github.com/astronomer/astro-cli/releases/download/v0.26.0/astro_0.26.0_linux_amd64.tar.gz"
       sha256 "e6553794e3807e3ef7e6bfed8775a5c2809037ed103e7e50f96635cb71bc259b"
     end
-  endd
+  end
 
   def install
     bin.install "astro"
