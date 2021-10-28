@@ -6,8 +6,7 @@ class AstroAT0260 < Formula
   desc "To build and run Airflow DAGs locally via docker-compose and deploy DAGs to Astronomer-managed Airflow clusters and interact with the Astronomer API."
   homepage "https://astronomer.io"
   version "0.26.0"
-  bottle :unneeded
-   
+
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/astronomer/astro-cli/releases/download/v0.26.0/astro_0.26.0_darwin_amd64.tar.gz"
