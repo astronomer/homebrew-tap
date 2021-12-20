@@ -5,19 +5,19 @@
 class Astro < Formula
   desc "To build and run Airflow DAGs locally via docker-compose and deploy DAGs to Astronomer-managed Airflow clusters and interact with the Astronomer API."
   homepage "https://astronomer.io"
-  version "0.26.2"
+  version "0.27.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/astronomer/astro-cli/releases/download/v0.26.2/astro_0.26.2_darwin_amd64.tar.gz"
-      sha256 "b69566d143f6fb6cd651e7d0ebba1882113cccd4918ae2dc4552b1c49cb2ca00"
+      url "https://github.com/astronomer/astro-cli/releases/download/v0.27.0/astro_0.27.0_darwin_amd64.tar.gz"
+      sha256 "b6aed7745808c8fcea24e2f2a90e9b5a0164621619c8ba68d833242f8c3e09da"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/astronomer/astro-cli/releases/download/v0.26.2/astro_0.26.2_linux_amd64.tar.gz"
-      sha256 "a8069a3f9e08bc8d5504a677027fbd9c599ea0b8adf092505aa446e3555f93d5"
+      url "https://github.com/astronomer/astro-cli/releases/download/v0.27.0/astro_0.27.0_linux_amd64.tar.gz"
+      sha256 "8615447fde22750dc4c61bb98375fd312c23aaa94513b7b686992d8569ff9747"
     end
   end
 
