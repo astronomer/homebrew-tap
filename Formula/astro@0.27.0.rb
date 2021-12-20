@@ -29,4 +29,3 @@ class AstroAT0270 < Formula
       system "#{bin}/astro version"
     end
   end
-  
