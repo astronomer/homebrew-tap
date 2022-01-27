@@ -8,10 +8,8 @@ class AstroAT0251 < Formula
   version "0.25.1"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/astronomer/astro-cli/releases/download/v0.25.1/astro_0.25.1_darwin_amd64.tar.gz"
-      sha256 "17c5c1d468076b87b0b986afb88145c158f20fa3606714d87378c7e3ccbd2338"
-    end
+    url "https://github.com/astronomer/astro-cli/releases/download/v0.25.1/astro_0.25.1_darwin_amd64.tar.gz"
+    sha256 "17c5c1d468076b87b0b986afb88145c158f20fa3606714d87378c7e3ccbd2338"
   end
 
   on_linux do
