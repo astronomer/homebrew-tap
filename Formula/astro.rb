@@ -10,22 +10,22 @@ class Astro < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/astronomer/astro-cli/releases/download/v1.6.0/astro_1.6.0_darwin_arm64.tar.gz"
-      sha256 "a1afe60ccff7c45cbed5cdeced624aa89af21ad4646ae052d11443f7880797f2"
+      sha256 "79f9c587b841ccf132f7f13efe7b262e1504bf0c46181f584d6c907455308759"
     end
     if Hardware::CPU.intel?
       url "https://github.com/astronomer/astro-cli/releases/download/v1.6.0/astro_1.6.0_darwin_amd64.tar.gz"
-      sha256 "598ec068b645a8778d902d0ee992ea140891a2ea13614153e55857fa5d89009e"
+      sha256 "ea67581a207b1a20d193e8ff87db5f2990e583b48c1014e898201c94852fee0c"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/astronomer/astro-cli/releases/download/v1.6.0/astro_1.6.0_linux_arm64.tar.gz"
-      sha256 "11b464552f13e9e8a909903f3e3b8608c526506caa917cfaa4f2d2a1ec17b0c8"
+      sha256 "01ceaa38ebf2c1f7d1d59304bec5b72758de03c5dcf11371e554bf14a2e2ae36"
     end
     if Hardware::CPU.intel?
       url "https://github.com/astronomer/astro-cli/releases/download/v1.6.0/astro_1.6.0_linux_amd64.tar.gz"
-      sha256 "bd652282a91306363583479366df8c61a1145a4c44cd411ad39fa48db39f0483"  
+      sha256 "d526beb3e59640703cbc017d5884649f2d0475eb67c7f694cb6bbd8d15d8dfbb"
     end
   end
 
