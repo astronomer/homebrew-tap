@@ -24,7 +24,7 @@ class AstroAT1141 < Formula
       end
       if Hardware::CPU.intel?
         url "https://github.com/astronomer/astro-cli/releases/download/v1.14.1/astro_1.14.1_linux_amd64.tar.gz"
-        sha256 "f066362719f032e61767c0030575e49ec8c4d85aba6f1facb4ef7eb96d6e5a46"
+        sha256 "bef39af38a3caba584575e8d9e8185972c8b509354c0469a02ff6b581ce7cfec"
       end
     end
   
