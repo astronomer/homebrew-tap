@@ -5,27 +5,27 @@
 class Astro < Formula
   desc "To build and run Airflow DAGs locally via docker-compose and deploy DAGs to Astronomer-managed Airflow clusters and interact with the Astronomer API."
   homepage "https://astronomer.io"
-  version "1.19.4"
+  version "1.20.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/astronomer/astro-cli/releases/download/v1.19.4/astro_1.19.4_darwin_arm64.tar.gz"
-      sha256 "3d5897f8879e0191ab68f51bd3614c0f466c9e048203aad3b2104baf76038f65"
+      url "https://github.com/astronomer/astro-cli/releases/download/v1.20.0/astro_1.20.0_darwin_arm64.tar.gz"
+      sha256 "6f765f45cfb9659c8798b730dc2b988e33ad30d281326544d42d795501aa78db"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/astronomer/astro-cli/releases/download/v1.19.4/astro_1.19.4_darwin_amd64.tar.gz"
-      sha256 "96083757c2211e9f68666b9c2554064ac481c2dad95dd1f0a43ed12f3a94830b"
+      url "https://github.com/astronomer/astro-cli/releases/download/v1.20.0/astro_1.20.0_darwin_amd64.tar.gz"
+      sha256 "0892190e432024359a1a1e32bb7699f2975636f8c9bfa38736795fe039641a54"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/astronomer/astro-cli/releases/download/v1.19.4/astro_1.19.4_linux_arm64.tar.gz"
-      sha256 "e126e0f370acb95dfe92b0844af6345f8230c2cf96d2abfd844a17eb65c956b6"
+      url "https://github.com/astronomer/astro-cli/releases/download/v1.20.0/astro_1.20.0_linux_arm64.tar.gz"
+      sha256 "9801d630b5cda385fd3b75ba219d712632d60cf9c771de790667833c9fb50c2a"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/astronomer/astro-cli/releases/download/v1.19.4/astro_1.19.4_linux_amd64.tar.gz"
-      sha256 "4dfe1ad4e6154d41b3a66bc1921c9522b3a40cc46f9989280d16476eb048ebf1"
+      url "https://github.com/astronomer/astro-cli/releases/download/v1.20.0/astro_1.20.0_linux_amd64.tar.gz"
+      sha256 "e10ab717415d7ce6ad0cfffd114a5ee62bd237992ef288e249eb5bbbf13e2448"
     end
   end
 
