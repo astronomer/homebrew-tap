@@ -14,7 +14,6 @@ GITHUB_USER="<your-github-username>" # Replace with your GitHub username
 # Fetch the latest release version
 LATEST_RELEASE=$(curl -s "https://api.github.com/repos/$ASTRO_CLI_REPO/releases/latest" | jq -r '.tag_name')
 LATEST_RELEASE="${LATEST_RELEASE#v}" # Strip "v" prefix if present
-LATEST_RELEASE=1.31.0
 
 if [[ -z "$LATEST_RELEASE" ]]; then
     echo "Failed to fetch the latest release version from $ASTRO_CLI_REPO."
