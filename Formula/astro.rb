@@ -29,6 +29,6 @@ class Astro < Formula
     bin.install "astro"
   end
   test do
-    system "\#{bin}/astro version"
+    system "#{bin}/astro version"
   end
 end
