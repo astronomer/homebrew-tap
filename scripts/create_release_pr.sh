@@ -85,7 +85,7 @@ class ${VERSION} < Formula
   end
 
   test do
-    system "\#{bin}/astro version"
+    system "#{bin}/astro version"
   end
 end
 EOL
