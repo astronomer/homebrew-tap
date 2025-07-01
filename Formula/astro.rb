@@ -4,26 +4,26 @@
 class Astro < Formula
   desc "To build and run Airflow DAGs locally via docker-compose and deploy DAGs to Astronomer-managed Airflow clusters and interact with the Astronomer API."
   homepage "https://astronomer.io"
-  version "1.35.0"
+  version "1.34.1"
   depends_on "podman" => :recommended if OS.mac?
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/astronomer/astro-cli/releases/download/v1.35.0/astro_1.35.0_darwin_arm64.tar.gz"
-      sha256 "496790abe290dbb860c2ac4fd5d2741240ee0eecb1d06d8b0a5fceff2b58d848"
+      url "https://github.com/astronomer/astro-cli/releases/download/v1.34.1/astro_1.34.1_darwin_arm64.tar.gz"
+      sha256 "da59c112151cb8525c76e40ed3129f6d0faafe1ff64d350099ae87c0abaf63ba"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/astronomer/astro-cli/releases/download/v1.35.0/astro_1.35.0_darwin_amd64.tar.gz"
-      sha256 "9f179842d642e57c13c159e70c0f65f87a4d98d79682d1ac56a04752392c6c18"
+      url "https://github.com/astronomer/astro-cli/releases/download/v1.34.1/astro_1.34.1_darwin_amd64.tar.gz"
+      sha256 "992960a528c0e4a1d21c4c404139542dd916287f40de3aa10000dbd3ec5614f0"
     end
   end
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/astronomer/astro-cli/releases/download/v1.35.0/astro_1.35.0_linux_arm64.tar.gz"
-      sha256 "d0119f3087c091928dc00537a96de8e60d41a39b1e81477180107217a60a3f15"
+      url "https://github.com/astronomer/astro-cli/releases/download/v1.34.1/astro_1.34.1_linux_arm64.tar.gz"
+      sha256 "3bcecad1df44922aac978a542b1f1086b58c7df8d24ef50fe30a8cb5ce96cfc0"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/astronomer/astro-cli/releases/download/v1.35.0/astro_1.35.0_linux_amd64.tar.gz"
-      sha256 "06b009db241e3f938c7ce08c6ddebf1d888bd49c6db193f4025e232e0582fd79"
+      url "https://github.com/astronomer/astro-cli/releases/download/v1.34.1/astro_1.34.1_linux_amd64.tar.gz"
+      sha256 "78470ca4c6c3afd2a2ec9ddfb860b7aeba41f00d34eea7b1c749effbb551b3a3"
     end
   end
   def install
