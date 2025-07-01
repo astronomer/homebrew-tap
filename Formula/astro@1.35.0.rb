@@ -5,6 +5,7 @@ class AstroAT1350 < Formula
   desc "To build and run Airflow DAGs locally via docker-compose and deploy DAGs to Astronomer-managed Airflow clusters and interact with the Astronomer API."
   homepage "https://astronomer.io"
   version "1.35.0"
+  disable! date: "2025-07-01", because: :broken
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/astronomer/astro-cli/releases/download/v1.35.0/astro_1.35.0_darwin_arm64.tar.gz"
