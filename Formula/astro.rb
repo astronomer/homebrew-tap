@@ -6,7 +6,6 @@ class Astro < Formula
   homepage "https://astronomer.io"
   version "1.40.0"
   depends_on "podman" => :recommended if OS.mac?
-  depends_on "vfkit" => :recommended if OS.mac?
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/astronomer/astro-cli/releases/download/v1.40.0/astro_1.40.0_darwin_arm64.tar.gz"
