@@ -5,22 +5,22 @@
 class Astro < Formula
   desc "To build and run Airflow Dags locally via docker-compose and deploy Dags to Astronomer-managed Airflow clusters and interact with the Astronomer API."
   homepage "https://astronomer.io"
-  version "1.47.0"
+  version "1.48.0"
 
   depends_on "podman" => :recommended if OS.mac?
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/astronomer/astro-cli/releases/download/v1.47.0/astro_1.47.0_darwin_amd64.tar.gz"
-      sha256 "c308af013a2665bfce73eccb398a1704cb277249794296fd80ff24278eb59ee3"
+      url "https://github.com/astronomer/astro-cli/releases/download/v1.48.0/astro_1.48.0_darwin_amd64.tar.gz"
+      sha256 "56ceae9d8eb1a9cba6ee6d94e40ffeceaace5bf7c1d371eb56fcf331adbdb588"
 
       define_method(:install) do
         bin.install "astro"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/astronomer/astro-cli/releases/download/v1.47.0/astro_1.47.0_darwin_arm64.tar.gz"
-      sha256 "61d78574820e1e6844842bdfb244ffd3375ddbb9ffc52e7e56317ef4c6b66ef2"
+      url "https://github.com/astronomer/astro-cli/releases/download/v1.48.0/astro_1.48.0_darwin_arm64.tar.gz"
+      sha256 "70d92565ebf2a57f6c41a5c8e70e95c1e424933d89b09226f4ba9d9bf5ee9fbc"
 
       define_method(:install) do
         bin.install "astro"
@@ -30,15 +30,15 @@ class Astro < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/astronomer/astro-cli/releases/download/v1.47.0/astro_1.47.0_linux_amd64.tar.gz"
-      sha256 "7e843ed4c2d8958db1499db448961bde99197f2204c8e1a30e401d992cf7f755"
+      url "https://github.com/astronomer/astro-cli/releases/download/v1.48.0/astro_1.48.0_linux_amd64.tar.gz"
+      sha256 "39a9a88b5346ee3cb139cf848fe1ec38a63766d1f38281aac62c0f5eb64c69b0"
       define_method(:install) do
         bin.install "astro"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/astronomer/astro-cli/releases/download/v1.47.0/astro_1.47.0_linux_arm64.tar.gz"
-      sha256 "6868b035cfe7aa0f7af5cbf534ac2572b2acee0150c2a49992e34bdad5c03e24"
+      url "https://github.com/astronomer/astro-cli/releases/download/v1.48.0/astro_1.48.0_linux_arm64.tar.gz"
+      sha256 "ddaed0b078e20e3c72e089c46d8d95564f4855a83385cb65b02a0018e2328cce"
       define_method(:install) do
         bin.install "astro"
       end
